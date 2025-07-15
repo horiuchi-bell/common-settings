@@ -1,0 +1,9 @@
+#!/bin/bash
+# Claude Code Session-End Hook
+# セッション終了時（ユーザー指示待ち状態）に通知
+
+NOTIFICATION_SCRIPT="/home/tems_kaihatu/notification_system.py"
+
+if [ -f "$NOTIFICATION_SCRIPT" ]; then
+    python3 "$NOTIFICATION_SCRIPT" "session_ready" "Claude Code" "作業完了 - 次の指示をお待ちしています" 30
+fi

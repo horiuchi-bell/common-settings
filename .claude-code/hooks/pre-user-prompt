@@ -1,0 +1,11 @@
+#!/bin/bash
+# Claude Code Pre-User-Prompt Hook
+# ユーザーに確認を求める前に通知
+
+CONFIG_FILE="/home/tems_kaihatu/github_config.json"
+NOTIFICATION_SCRIPT="/home/tems_kaihatu/notification_system.py"
+
+if [ -f "$CONFIG_FILE" ] && [ -f "$NOTIFICATION_SCRIPT" ]; then
+    # ユーザー確認が必要な場合の通知
+    python3 "$NOTIFICATION_SCRIPT" "user_confirmation_required" "Claude Code - 確認要求" "ユーザーからの確認が必要です" 5
+fi

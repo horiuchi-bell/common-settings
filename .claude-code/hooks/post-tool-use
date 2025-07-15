@@ -1,0 +1,7 @@
+#!/bin/bash
+# Claude Code Post-Tool-Use Hook
+# 個別作業の通知は無効化（セッション終了時のみ通知）
+
+# 何もしない（コメントアウト状態）
+# NOTIFICATION_SCRIPT="/home/tems_kaihatu/notification_system.py"
+# 個別ツール実行時の通知は停止

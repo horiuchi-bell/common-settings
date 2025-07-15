@@ -1,0 +1,79 @@
+# Claude Code 全プロジェクト共通 .gitignore
+
+# 機密情報・設定ファイル
+github_config.json
+*_config.json
+*.env
+.env*
+config.local.*
+
+# 個人情報・トークン
+*token*
+*secret*
+*key*
+*password*
+
+# システムファイル
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*~
+
+# IDE・エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# バックアップファイル
+*.backup
+*.bak
+*_backup_*
+
+# ビルド成果物
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# データベース
+*.sqlite
+*.sqlite3
+*.db
+
+# Office一時ファイル
+~$*
+*.tmp
+
+# 証明書・鍵ファイル
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Claude Code内部ファイル
+.claude-code/settings.json
